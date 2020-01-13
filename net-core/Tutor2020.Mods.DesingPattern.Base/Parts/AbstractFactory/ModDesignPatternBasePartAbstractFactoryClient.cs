@@ -18,15 +18,15 @@ namespace Tutor2020.Mods.DesingPattern.Base.Parts.AbstractFactory
         /// </summary>
         public void Run()
         {
-            var creators = new IModDesignPatternBasePartAbstractFactoryCommonCreator[]
+            var services = new IModDesignPatternBasePartAbstractFactoryCommonService[]
             {
-                new ModDesignPatternBasePartAbstractFactoryTypeFirstCreator(),
+                new ModDesignPatternBasePartAbstractFactoryTypeFirstService(),
                 new ModDesignPatternBasePartAbstractFactoryTypeSecondCreator()
             };
 
-            foreach (var creator in creators)
+            foreach (var service in services)
             {
-                UseCreator(creator);
+                UseService(service);
             }
         }
 
@@ -35,10 +35,10 @@ namespace Tutor2020.Mods.DesingPattern.Base.Parts.AbstractFactory
         #region Protected methods
 
         /// <summary>
-        /// Использовать создателя.
+        /// Использовать сервис.
         /// </summary>
-        /// <param name="creator">Создатель.</param>
-        protected abstract void UseCreator(IModDesignPatternBasePartAbstractFactoryCommonCreator creator);
+        /// <param name="service">Сервис.</param>
+        protected abstract void UseService(IModDesignPatternBasePartAbstractFactoryCommonService service);
 
         #endregion Protected methods
     }

@@ -1,6 +1,7 @@
 ﻿//Author Maxim Kuzmin//makc//
 
-using Tutor2020.Mods.DesingPattern.Base.Parts.FactoryMethod.Creators;
+using Tutor2020.Mods.DesingPattern.Base.Parts.FactoryMethod.Common;
+using Tutor2020.Mods.DesingPattern.Base.Parts.FactoryMethod.Services;
 
 namespace Tutor2020.Mods.DesingPattern.Base.Parts.FactoryMethod
 {
@@ -16,15 +17,15 @@ namespace Tutor2020.Mods.DesingPattern.Base.Parts.FactoryMethod
         /// </summary>
         public void Run()
         {
-            var creators = new ModDesignPatternBasePartFactoryMethodCreator[]
+            var services = new ModDesignPatternBasePartFactoryMethodCommonService[]
             {
-                new ModDesignPatternBasePartFactoryMethodCreatorFirst(),
-                new ModDesignPatternBasePartFactoryMethodCreatorSecond()
+                new ModDesignPatternBasePartFactoryMethodServiceFirst(),
+                new ModDesignPatternBasePartFactoryMethodServiceSecond()
             };
 
-            foreach (var creator in creators)
+            foreach (var service in services)
             {
-                UseCreator(creator);
+                UseService(service);
             }
         }
 
@@ -33,10 +34,10 @@ namespace Tutor2020.Mods.DesingPattern.Base.Parts.FactoryMethod
         #region Protected methods
 
         /// <summary>
-        /// Использовать создателя.
+        /// Использовать сервис.
         /// </summary>
-        /// <param name="creator">Создатель.</param>
-        protected abstract void UseCreator(ModDesignPatternBasePartFactoryMethodCreator creator);
+        /// <param name="service">Сервис.</param>
+        protected abstract void UseService(ModDesignPatternBasePartFactoryMethodCommonService service);
 
         #endregion Protected methods
     }

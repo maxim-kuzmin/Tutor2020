@@ -14,10 +14,10 @@ namespace Tutor2020.Apps.DesignPattern.Base.App.Parts.AbstractFactory
         #region Protected methods
 
         /// <inheritdoc/>
-        protected sealed override void UseCreator(IModDesignPatternBasePartAbstractFactoryCommonCreator creator)
+        protected sealed override void UseService(IModDesignPatternBasePartAbstractFactoryCommonService service)
         {            
-            Console.WriteLine(creator.CreateProductFirst().FirstName);
-            Console.WriteLine(creator.CreateProductSecond().SecondName);
+            Console.WriteLine(service.CreateProductFirst().FirstName);
+            Console.WriteLine(service.CreateProductSecond().SecondName);
         }
 
         #endregion Protected methods

@@ -5,9 +5,9 @@ using Tutor2020.Mods.DesingPattern.Base.Parts.AbstractFactory.Common.Products;
 namespace Tutor2020.Mods.DesingPattern.Base.Parts.AbstractFactory.Common
 {
     /// <summary>
-    /// Мод "DesingPattern". Основа. Часть "AbstractFactory". Общее. Создатель. Интерфейс.
+    /// Мод "DesingPattern". Основа. Часть "AbstractFactory". Общее. Сервис. Интерфейс.
     /// </summary>
-    public interface IModDesignPatternBasePartAbstractFactoryCommonCreator
+    public interface IModDesignPatternBasePartAbstractFactoryCommonService
     {
         #region Methods
 

@@ -7,9 +7,9 @@ using Tutor2020.Mods.DesingPattern.Base.Parts.AbstractFactory.Types.First.Produc
 namespace Tutor2020.Mods.DesingPattern.Base.Parts.AbstractFactory.Types.First
 {
     /// <summary>
-    /// Мод "DesingPattern". Основа. Часть "AbstractFactory". Тип "First". Создатель.
+    /// Мод "DesingPattern". Основа. Часть "AbstractFactory". Тип "First". Сервис.
     /// </summary>
-    public class ModDesignPatternBasePartAbstractFactoryTypeFirstCreator : IModDesignPatternBasePartAbstractFactoryCommonCreator
+    public class ModDesignPatternBasePartAbstractFactoryTypeFirstService : IModDesignPatternBasePartAbstractFactoryCommonService
     {
         #region Public methods
 

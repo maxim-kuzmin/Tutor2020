@@ -1,11 +1,11 @@
 ﻿//Author Maxim Kuzmin//makc//
 
-namespace Tutor2020.Mods.DesingPattern.Base.Parts.FactoryMethod
+namespace Tutor2020.Mods.DesingPattern.Base.Parts.FactoryMethod.Common
 {
     /// <summary>
-    /// Мод "DesingPattern". Основа. Часть "FactoryMethod". Создатель.
+    /// Мод "DesingPattern". Основа. Часть "FactoryMethod". Общее. Сервис.
     /// </summary>
-    public abstract class ModDesignPatternBasePartFactoryMethodCreator
+    public abstract class ModDesignPatternBasePartFactoryMethodCommonService
     {
         #region Public methods
 
@@ -26,7 +26,7 @@ namespace Tutor2020.Mods.DesingPattern.Base.Parts.FactoryMethod
         /// Создать продукт.
         /// </summary>
         /// <returns>Продукт.</returns>
-        protected abstract IModDesignPatternBasePartFactoryMethodProduct CreateProduct();
+        protected abstract IModDesignPatternBasePartFactoryMethodCommonProduct CreateProduct();
 
         #endregion Protected methods
     }
