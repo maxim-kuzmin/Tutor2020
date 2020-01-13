@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutor2020.Apps.DesignPattern.Base", "Tutor2020.Apps.DesignPattern.Base\Tutor2020.Apps.DesignPattern.Base.csproj", "{647E7161-30EA-4D78-B186-ADD70D0C69C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{46CF265E-1CD8-4E9C-A697-0D109AE00AE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mods", "Mods", "{3DADFFEA-2018-487E-A6CB-833681D81F59}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutor2020.Mods.DesingPattern.Base", "Tutor2020.Mods.DesingPattern.Base\Tutor2020.Mods.DesingPattern.Base.csproj", "{9F61D112-9209-461C-B80B-58291C5C6C96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{647E7161-30EA-4D78-B186-ADD70D0C69C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{647E7161-30EA-4D78-B186-ADD70D0C69C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{647E7161-30EA-4D78-B186-ADD70D0C69C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{647E7161-30EA-4D78-B186-ADD70D0C69C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F61D112-9209-461C-B80B-58291C5C6C96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F61D112-9209-461C-B80B-58291C5C6C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F61D112-9209-461C-B80B-58291C5C6C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F61D112-9209-461C-B80B-58291C5C6C96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{647E7161-30EA-4D78-B186-ADD70D0C69C6} = {46CF265E-1CD8-4E9C-A697-0D109AE00AE0}
+		{9F61D112-9209-461C-B80B-58291C5C6C96} = {3DADFFEA-2018-487E-A6CB-833681D81F59}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5E24D08-99F2-45F5-B3B9-5583A66744B3}
+	EndGlobalSection
+EndGlobal
