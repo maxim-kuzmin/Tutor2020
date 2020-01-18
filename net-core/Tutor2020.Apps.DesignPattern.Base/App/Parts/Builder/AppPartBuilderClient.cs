@@ -16,13 +16,13 @@ namespace Tutor2020.Apps.DesignPattern.Base.App.Parts.Builder
         /// <inheritdoc/>
         protected sealed override void UseServiceFirst(ModDesignPatternBasePartBuilderServiceFirst service)
         {
-            Console.WriteLine(service.Result.Name);
+            Console.WriteLine(service.Result.FirstName);
         }
 
         /// <inheritdoc/>
         protected sealed override void UseServiceSecond(ModDesignPatternBasePartBuilderServiceSecond service)
         {
-            Console.WriteLine(service.Result.Name);
+            Console.WriteLine(service.Result.SecondName);
         }
 
         #endregion Protected methods

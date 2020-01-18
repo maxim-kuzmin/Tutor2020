@@ -2,6 +2,8 @@
 
 using System;
 using Tutor2020.Apps.DesignPattern.Base.App.Parts.AbstractFactory;
+using Tutor2020.Apps.DesignPattern.Base.App.Parts.Adapter;
+using Tutor2020.Apps.DesignPattern.Base.App.Parts.Bridge;
 using Tutor2020.Apps.DesignPattern.Base.App.Parts.Builder;
 using Tutor2020.Apps.DesignPattern.Base.App.Parts.FactoryMethod;
 using Tutor2020.Apps.DesignPattern.Base.App.Parts.Prototype;
@@ -18,6 +20,8 @@ namespace Tutor2020.Apps.DesignPattern.Base
         static void Main(string[] args)
         {
             Run("AbstractFactory", new AppPartAbstractFactoryClient().Run);
+            Run("Adapter", new AppPartAdapterClient().Run);
+            Run("Bridge", new AppPartBridgeClient().Run);
             Run("Builder", new AppPartBuilderClient().Run);
             Run("FactoryMethod", new AppPartFactoryMethodClient().Run);
             Run("Prototype", new AppPartPrototypeClient().Run);

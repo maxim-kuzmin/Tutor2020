@@ -9,15 +9,6 @@ namespace Tutor2020.Mods.DesingPattern.Base.Parts.Builder.Products
     {
         #region Properties
 
-        /// <inheritdoc/>
-        public string Name
-        { 
-            get
-            {
-                return $"Second: {SecondName}";
-            }
-        }
-
         /// <summary>
         /// Второе имя.
         /// </summary>
