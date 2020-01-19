@@ -12,13 +12,7 @@ namespace Tutor2020.Mods.DesingPattern.Base.Parts.Decorator
         #region Properties
 
         /// <inheritdoc/>
-        public string Name
-        {
-            get
-            {
-                return "Name";
-            }
-        }
+        public string Name { get; set; }
 
         #endregion Properties
     }

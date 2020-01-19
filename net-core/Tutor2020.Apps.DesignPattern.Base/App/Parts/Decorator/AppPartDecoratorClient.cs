@@ -14,9 +14,9 @@ namespace Tutor2020.Apps.DesignPattern.Base.App.Parts.Decorator
         #region Protected methods
 
         /// <inheritdoc/>
-        protected sealed override void UseService(ModDesignPatternBasePartDecoratorCommonService service)
+        protected sealed override void UseProduct(IModDesignPatternBasePartDecoratorCommonProduct product)
         {
-            Console.WriteLine(service.Name);
+            Console.WriteLine(product.Name);
         }
 
         #endregion Protected methods

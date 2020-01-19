@@ -17,22 +17,39 @@ namespace Tutor2020.Mods.DesingPattern.Base.Parts.Decorator
         /// </summary>
         public void Run()
         {
-            var product = new ModDesignPatternBasePartDecoratorProduct();
-
-            var service1 = new ModDesignPatternBasePartDecoratorCommonService(product);
-            var service2 = new ModDesignPatternBasePartDecoratorServiceFirst(service1);
-            var service3 = new ModDesignPatternBasePartDecoratorServiceSecond(service2);
-
-            var services = new ModDesignPatternBasePartDecoratorCommonService[]
+            var product0 = new ModDesignPatternBasePartDecoratorProduct
             {
-                service1,
-                service2,
-                service3
+                Name = "Name0"
             };
 
-            foreach (var service in services)
+            var product1 = new ModDesignPatternBasePartDecoratorProduct
             {
-                UseService(service);
+                Name = "Name1"
+            };
+
+            var service0 = new ModDesignPatternBasePartDecoratorCommonService(product0);
+            var service0First = new ModDesignPatternBasePartDecoratorServiceFirst(service0);
+            var service0FirstSecond = new ModDesignPatternBasePartDecoratorServiceSecond(service0First);
+
+            var service1 = new ModDesignPatternBasePartDecoratorCommonService(product1);
+            var service1First = new ModDesignPatternBasePartDecoratorServiceFirst(service1);
+            var service1FirstSecond = new ModDesignPatternBasePartDecoratorServiceSecond(service1First);
+
+            var products = new IModDesignPatternBasePartDecoratorCommonProduct[]
+            {
+                product0,
+                product1,
+                service0,
+                service0First,
+                service0FirstSecond,
+                service1,
+                service1First,
+                service1FirstSecond
+            };
+
+            foreach (var product in products)
+            {
+                UseProduct(product);
             }
         }
 
@@ -41,10 +58,10 @@ namespace Tutor2020.Mods.DesingPattern.Base.Parts.Decorator
         #region Protected methods
 
         /// <summary>
-        /// Использовать сервис.
+        /// Использовать продукт.
         /// </summary>
-        /// <param name="service">Сервис.</param>
-        protected abstract void UseService(ModDesignPatternBasePartDecoratorCommonService service);
+        /// <param name="service">Продукт.</param>
+        protected abstract void UseProduct(IModDesignPatternBasePartDecoratorCommonProduct product);
 
         #endregion Protected methods
     }
