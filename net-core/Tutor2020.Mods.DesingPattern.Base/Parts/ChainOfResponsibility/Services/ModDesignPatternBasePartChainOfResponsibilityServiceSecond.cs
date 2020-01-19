@@ -19,6 +19,6 @@ namespace Tutor2020.Mods.DesingPattern.Base.Parts.ChainOfResponsibility.Services
             base.HandleProduct(product);
         }
 
-        #endregion Constructors
+        #endregion Public methods
     }
 }

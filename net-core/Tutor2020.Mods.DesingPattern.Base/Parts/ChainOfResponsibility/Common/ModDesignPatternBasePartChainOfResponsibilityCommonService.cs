@@ -38,6 +38,6 @@ namespace Tutor2020.Mods.DesingPattern.Base.Parts.ChainOfResponsibility.Common
             return NextService = service;
         }
 
-        #endregion Constructors
+        #endregion Public methods
     }
 }
