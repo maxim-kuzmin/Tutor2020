@@ -18,7 +18,7 @@ namespace Tutor2020.Mods.DesingPattern.Base.Parts.Decorator.Common
         { 
             get
             {
-                return Product.Name;
+                return "Decorator: " + Product.Name;
             }
         }
 
