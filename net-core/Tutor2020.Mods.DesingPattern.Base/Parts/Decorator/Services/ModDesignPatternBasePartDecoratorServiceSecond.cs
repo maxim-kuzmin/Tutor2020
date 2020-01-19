@@ -16,7 +16,7 @@ namespace Tutor2020.Mods.DesingPattern.Base.Parts.Decorator.Services
         {
             get
             {
-                return "Second " + base.Name;
+                return $"Second {base.Name}";
             }
         }
 

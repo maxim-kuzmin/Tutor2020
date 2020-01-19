@@ -8,7 +8,10 @@ using Tutor2020.Apps.DesignPattern.Base.App.Parts.Builder;
 using Tutor2020.Apps.DesignPattern.Base.App.Parts.Composite;
 using Tutor2020.Apps.DesignPattern.Base.App.Parts.Decorator;
 using Tutor2020.Apps.DesignPattern.Base.App.Parts.FactoryMethod;
+using Tutor2020.Apps.DesignPattern.Base.App.Parts.Fasade;
+using Tutor2020.Apps.DesignPattern.Base.App.Parts.Lightweight;
 using Tutor2020.Apps.DesignPattern.Base.App.Parts.Prototype;
+using Tutor2020.Apps.DesignPattern.Base.App.Parts.Proxy;
 
 namespace Tutor2020.Apps.DesignPattern.Base
 {
@@ -28,7 +31,10 @@ namespace Tutor2020.Apps.DesignPattern.Base
             Run("Composite", new AppPartCompositeClient().Run);
             Run("Decorator", new AppPartDecoratorClient().Run);
             Run("FactoryMethod", new AppPartFactoryMethodClient().Run);
+            Run("Fasade", new AppPartFasadeClient().Run);
+            Run("Lightweight", new AppPartLightweightClient().Run);
             Run("Prototype", new AppPartPrototypeClient().Run);
+            Run("Proxy", new AppPartProxyClient().Run);
         }
 
         static void Run(string title, Action action)

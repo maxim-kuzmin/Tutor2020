@@ -24,7 +24,7 @@ namespace Tutor2020.Mods.DesingPattern.Base.Parts.Bridge.Services
         /// <inheritdoc/>
         public sealed override string GetProductName()
         {
-            return "Second: " + base.GetProductName();
+            return $"Second: {base.GetProductName()}";
         }
 
         #endregion Public methods        

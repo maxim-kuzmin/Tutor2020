@@ -45,11 +45,11 @@ namespace Tutor2020.Mods.DesingPattern.Base.Parts.Prototype
             {
                 if (clone is ModDesignPatternBasePartPrototypeProductFirst cloneFirst)
                 {
-                    cloneFirst.FirstName = "FirstName 1";
+                    cloneFirst.FirstName = "FirstName1";
                 }
                 else if (clone is ModDesignPatternBasePartPrototypeProductSecond cloneSecond)
                 {
-                    cloneSecond.SecondName = "SecondName 1";
+                    cloneSecond.SecondName = "SecondName1";
                 }
             }
 
