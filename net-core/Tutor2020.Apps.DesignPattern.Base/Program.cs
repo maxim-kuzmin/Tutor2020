@@ -5,6 +5,7 @@ using Tutor2020.Apps.DesignPattern.Base.App.Parts.AbstractFactory;
 using Tutor2020.Apps.DesignPattern.Base.App.Parts.Adapter;
 using Tutor2020.Apps.DesignPattern.Base.App.Parts.Bridge;
 using Tutor2020.Apps.DesignPattern.Base.App.Parts.Builder;
+using Tutor2020.Apps.DesignPattern.Base.App.Parts.ChainOfResponsibility;
 using Tutor2020.Apps.DesignPattern.Base.App.Parts.Composite;
 using Tutor2020.Apps.DesignPattern.Base.App.Parts.Decorator;
 using Tutor2020.Apps.DesignPattern.Base.App.Parts.FactoryMethod;
@@ -28,6 +29,7 @@ namespace Tutor2020.Apps.DesignPattern.Base
             Run("Adapter", new AppPartAdapterClient().Run);
             Run("Bridge", new AppPartBridgeClient().Run);
             Run("Builder", new AppPartBuilderClient().Run);
+            Run("ChainOfResponsibility", new AppPartChainOfResponsibilityClient().Run);
             Run("Composite", new AppPartCompositeClient().Run);
             Run("Decorator", new AppPartDecoratorClient().Run);
             Run("FactoryMethod", new AppPartFactoryMethodClient().Run);
